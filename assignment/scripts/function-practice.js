@@ -21,10 +21,12 @@ console.log('Howdy,', helloName('Pesto'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
+  let secondNumber = 11.58
   // return firstNumber + secondNumber;
+  return firstNumber + secondNumber;
 }
 
-
+console.log('The total is:', addNumbers(22.42));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
 
