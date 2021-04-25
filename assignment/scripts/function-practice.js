@@ -21,17 +21,18 @@ console.log('Howdy,', helloName('Pesto'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
-  let secondNumber = 11.58
+  let secondNumber = 11.58;
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
 }
 
 console.log('The total is:', addNumbers(22.42));
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(num0, num1, num2){
+let answer = num0 * num1 * num2;
+return answer;
 }
-
+console.log('The product is:', multiplyThree(55, 102, 4));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
