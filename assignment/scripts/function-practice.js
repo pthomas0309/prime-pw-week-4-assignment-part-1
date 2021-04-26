@@ -39,8 +39,10 @@ console.log('The product is:', multiplyThree(55, 102, 4));
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  }
-    return false;
+  } // end positive integer
+  else {
+  return false;
+} //end negative integer
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
@@ -62,8 +64,31 @@ console.log('The scariest stinging insects are:', getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-
+array = ['7', 'five', '24', 'one hundred']
+for(let i=0; i<array.length; i++){
+  if(value === array[0]){
+    return true;
 }
+  if(value === array[1]){
+    return true;
+}
+  if(value === array[2]){
+    return true;
+}
+  if(value === array[3]){
+    return true;
+}
+  else {
+    return false;
+}
+}//end for loop
+}
+
+console.log('Is 7 in this array?', find('7'));
+console.log('Is five in this array?', find('five'));
+console.log('Is 12.46 in this array?', find('12.46'));
+console.log('Is 24 in this array?', find('24'));
+console.log('Is 700 in this array?', find('700'));
 
 // ----------------------
 // Stretch Goals
