@@ -74,31 +74,26 @@ console.log(`What am I missing? ${getLast(['keys', 'phone', 'wallet'])}`);
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-array = ['7', 'five', '24', 'one hundred']
 for(let i=0; i<array.length; i++){
-  if(value === array[0]){
+  if (value === array[i]) {
+    console.log(`Value found ${array[i]}`);
     return true;
-}
-  if(value === array[1]){
-    return true;
-}
-  if(value === array[2]){
-    return true;
-}
-  if(value === array[3]){
-    return true;
-}
-  else {
+  }
+  else if (value !== array[i] && array[i] === getLast(array)){
+    console.log('No match');
     return false;
-}
+  }
 }//end for loop
 }
+let someNumbers = ['5', '9', '109', '83', '30', '29', '7']
+let numberWords = ['five', 'twelve', 'twenty-three', 'ten']
+let decimalNumbers = ['1.45', '60.122', '5.0', '12.46']
 
-console.log('Is 7 in this array?', find('7'));
-console.log('Is five in this array?', find('five'));
-console.log('Is 12.46 in this array?', find('12.46'));
-console.log('Is 24 in this array?', find('24'));
-console.log('Is 700 in this array?', find('700'));
+console.log('Is 7 in this array?', find('7', someNumbers));
+console.log('Is five in this array?', find('five', numberWords));
+console.log('Is 12.46 in this array?', find('12.46', decimalNumbers));
+console.log('Is 24 in this array?', find('24', someNumbers));
+console.log('Is 700 in this array?', find('700', numberWords));
 
 // ----------------------
 // Stretch Goals
