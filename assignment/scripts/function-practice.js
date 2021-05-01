@@ -13,20 +13,21 @@ console.log('Test - should say "Hello World!"', hello());
 
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
-function helloName( name ) {
+function helloName(name) {
   return name;
 }
 // Remember to call the function to test
 console.log('Howdy,', helloName('Pesto'));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  let secondNumber = 11.58;
-  // return firstNumber + secondNumber;
-  return firstNumber + secondNumber;
+function addNumbers(firstNumber, secondNumber) {
+  console.log('2 Number Addition Calculator');
+  let sum = firstNumber + secondNumber;
+  return sum;
 }
+let mathEquation = addNumbers(3, 5);
 
-console.log('The total is:', addNumbers(22.42));
+console.log('Result:', mathEquation);
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num0, num1, num2){
 let answer = num0 * num1 * num2;
